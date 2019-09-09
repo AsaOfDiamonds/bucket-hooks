@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import BucketList from "./components/BucketList";
+import Bucket from "./components/Bucket";
 
 import './App.css';
 
@@ -31,6 +32,7 @@ function App() {
         <h1>Bucket List with Hooks</h1>
       </header>
       <BucketList />
+      <Bucket />
     </div>
   );
 }
