@@ -3,7 +3,7 @@ import React, {useState} from 'react';
 import './App.css';
 
 function App() {
-  const [bucket, setBucket] = useState({
+  const [bucket, setBucket] = useState(({
     bucket: [
       {
         name: 'Go to Ukraine',
@@ -21,9 +21,10 @@ function App() {
         completed: false
       }
     ]
-  });
+  }));
   
   return (
+    console.log(bucket),
     <div className="App">
       <header className="App-header">
         <h1>Bucket List with Hooks</h1>
